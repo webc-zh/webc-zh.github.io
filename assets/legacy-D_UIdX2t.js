@@ -1,0 +1,1 @@
+import{f as e}from"./Index-Ba-1FnHF.js";e();
