@@ -1,0 +1,1 @@
+import{f as e}from"./Index-BOObbmFr.js";e();
