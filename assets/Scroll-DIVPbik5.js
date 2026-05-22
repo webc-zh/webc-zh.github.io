@@ -1,5 +1,5 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["./Demo-UnSX9VLF.js","./Index-CQpjHjyZ.js","./init-CDUtHgK2.js","./init-DG9TLnyk.css","./Index-D2nR6Vig.css","./legacy-DVBY_PyJ.js"])))=>i.map(i=>d[i]);
-import{t as e}from"./Index-CQpjHjyZ.js";var t=[`自定义虚拟滚动条
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["./Demo-CjCS-ALT.js","./Index-Delbj31k.js","./init-ClRsA0Z4.js","./Index-D2nR6Vig.css","./legacy-CxYYy28h.js"])))=>i.map(i=>d[i]);
+import{t as e}from"./Index-Delbj31k.js";var t=[`自定义虚拟滚动条
 
 ## 功能
 
@@ -49,4 +49,4 @@ v-scroll
   border 1px solid #0000000f
 </style>
 \`\`\`
-`,()=>e(()=>import(`./Demo-UnSX9VLF.js`),__vite__mapDeps([0,1,2,3,4,5]),import.meta.url),[{name:`--cursorGrabSvg`,data_url:`/lib/svg/giUzPhnYmbjOG3VzqseH5g.svg`,file_path:`./cursor/grab.svg`},{name:`--cursorScrollhSvg`,data_url:`/lib/svg/yhI9x3s8u28j5vUN45useQ.svg`,file_path:`./cursor/scrollh.svg`},{name:`--cursorScrollvSvg`,data_url:`/lib/svg/sgoOOaKyF_KnkUoRKxWczw.svg`,file_path:`./cursor/scrollv.svg`}]];export{t as default};
+`,()=>e(()=>import(`./Demo-CjCS-ALT.js`),__vite__mapDeps([0,1,2,3,4]),import.meta.url),[{name:`--cursorGrabSvg`,data_url:`/lib/svg/giUzPhnYmbjOG3VzqseH5g.svg`,file_path:`./cursor/grab.svg`},{name:`--cursorScrollhSvg`,data_url:`/lib/svg/yhI9x3s8u28j5vUN45useQ.svg`,file_path:`./cursor/scrollh.svg`},{name:`--cursorScrollvSvg`,data_url:`/lib/svg/sgoOOaKyF_KnkUoRKxWczw.svg`,file_path:`./cursor/scrollv.svg`}]];export{t as default};

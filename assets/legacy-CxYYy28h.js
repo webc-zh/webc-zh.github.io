@@ -1,0 +1,1 @@
+import{f as e}from"./Index-Delbj31k.js";e();
