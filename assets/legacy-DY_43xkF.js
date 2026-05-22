@@ -1,0 +1,1 @@
+import{f as e}from"./Index-fnlT_i3w.js";e();
