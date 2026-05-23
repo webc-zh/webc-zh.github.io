@@ -1,9 +1,0 @@
-#!/usr/bin/env bash
-
-./sh/hook/fmt.sh
-
-bun x lint-staged
-
-if [ -z "$S" ]; then
-  git add -u
-fi

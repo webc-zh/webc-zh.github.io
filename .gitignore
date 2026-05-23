@@ -1,8 +1,0 @@
-node_modules/
-/conf/
-/gen/
-/dist/
-/lib/
-*.log
-*.tar.bz2
-bun.lock
