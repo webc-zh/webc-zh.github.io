@@ -2106,11 +2106,11 @@ var nF = {}, nC = function(e, t, n) {
 }, nP = [[
 	"Scroll",
 	"自定义虚拟滚动条",
-	() => nC(() => import("./Scroll-Ceg3ApwF.js"), [], import.meta.url)
+	() => nC(() => import("./Scroll-CK82QoT2.js"), [], import.meta.url)
 ], [
 	"Wait",
 	"加载动画与表单提交遮罩",
-	() => nC(() => import("./Wait-CDzxB1_1.js"), [], import.meta.url)
+	() => nC(() => import("./Wait-BiA-a4tC.js"), [], import.meta.url)
 ]], nL = [
 	{
 		name: "On",
@@ -2146,13 +2146,13 @@ var nF = {}, nC = function(e, t, n) {
 		name: "rmWait",
 		title: "移除加载等待元素",
 		doc: "无导出函数。导入时自动从 DOM 中移除 ID 为 `W` 的元素。\n\n## 设计意图 & 为什么要放置等待动画于 `pug/_.pug`\n\n在 `pug/_.pug` 中，定义了具有 ID `W` 的 `<style>` 标签，该样式利用 CSS `body:before` 伪类实现了一个无需 JS 依赖的纯 CSS 加载等待动画（旋转的圆环）。\n\n这样做的目的是：\n\n- **首屏秒开体验**：在浏览器解析 HTML 时即刻呈现加载状态，无需等待体积较大的 JS 脚本（或 Svelte 组件框架）下载、解析与执行完毕。\n- **避免白屏**：防止网络较慢或 JS 文件加载时用户看到白屏，提供更好的用户视觉反馈。\n\n## 哪儿被调用 / 移除时机\n\n当主 JS 或组件脚本加载完毕并初始化好 DOM 后，会通过动态导入或模块导入执行 `x/rmWait.js`，瞬间移除 `<style id=\"W\">`，从而销毁加载等待动画。\n\n在 `page/entry/init.js` 结尾的地方导入，移除加载中的动画。",
-		code: "import { D } from \"./dom.js\";\nD.getElementById(\"W\").remove();\n"
+		code: "import { D } from \"x/dom.js\";\nD.getElementById(\"W\").remove();\n"
 	},
 	{
 		name: "routeDelay",
 		title: "延迟路由触发避免重复加载数据",
 		doc: "用于 Svelte，避免组件被卸载前触发路由导致重复加载数据。\n\n- `routeDelay(loadUrl)`\n  - `loadUrl`: 路由变化时的回调函数。格式：\n    - 参数：\n      - `url`: 字符串，新 URL 路径。\n      - `preUrl`: 字符串（可选），旧 URL 路径。\n    - 返回值：无。\n  - 返回值：取消路由订阅并清除定时器的函数，格式为 `() => void`。",
-		code: "import { route } from \"./route.js\";\n\n// 避免 onMount 之前，route 被触发，导致重复加载数据\nexport const routeDelay = (loadUrl) => {\n  let t;\n  const unbind = route((url, preUrl) => {\n    t = setTimeout(() => {\n      loadUrl(url, preUrl);\n    });\n  });\n  return () => {\n    unbind();\n    clearTimeout(t);\n  };\n};\n\nexport default routeDelay;\n"
+		code: "import { route } from \"x/route.js\";\n\n// 避免 onMount 之前，route 被触发，导致重复加载数据\nexport const routeDelay = (loadUrl) => {\n  let t;\n  const unbind = route((url, preUrl) => {\n    t = setTimeout(() => {\n      loadUrl(url, preUrl);\n    });\n  });\n  return () => {\n    unbind();\n    clearTimeout(t);\n  };\n};\n\nexport default routeDelay;\n"
 	}
 ], nO = t5("<b class=\"aside-header svelte-paud8n\"><a href=\"/\"><i class=\"icon-home svelte-paud8n\"></i><b>主页</b></a><a href=\"https://groups.google.com/g/webc-site\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"svelte-paud8n\"><i class=\"icon-forum svelte-paud8n\"></i><b>论坛</b></a></b>"), nT = {
 	hash: "svelte-paud8n",
